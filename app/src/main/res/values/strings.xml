@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">长命百岁</string>
+    <string name="title_home">主页</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_meal">饮食</string>
+
+    <string name="title_fit">训练</string>
+    <string name="title_exercise_list">动作</string>
+    <string name="title_exercise_edit">编辑动作</string>
+    <string name="title_subsession_list">训练内容</string>
+    <string name="exercise_name_prompt">训练名称</string>
+    <string name="exercise_type_prompt">训练类型</string>
+
+    <string name="add_new_exercise">添加动作</string>
+    <string name="fit_delete_exercise_dialog">确定删除吗？</string>
+    <string name="fit_exercise_edit_false_dialog">动作名或类型不能为空</string>
+    <string name="fit_exercise_edit_repeat_dialog">动作名不可重复</string>
+
+
+    <string name="empty_input_error_dialog">输入不能为空</string>
+    <string name="select">选择</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="confirm">确定</string>
+    <string name="menu_manage_exercise">管理动作</string>
+    <string name="add_set">加一组</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

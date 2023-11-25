@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.cho.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_sessionEditFragment"
+            app:destination="@id/sessionEditFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_fit"
+        android:name="com.example.cho.ui.fit.FitFragment"
+        android:label="@string/title_fit"
+        tools:layout="@layout/fragment_fit" >
+        <action
+            android:id="@+id/action_navigation_fit_to_sessionEditFragment"
+            app:destination="@id/sessionEditFragment" />
+        <action
+            android:id="@+id/action_navigation_fit_to_exerciseListFragment"
+            app:destination="@id/exerciseListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/exerciseListFragment"
+        android:name="com.example.cho.ui.fit.ExerciseListFragment"
+        android:label="@string/title_exercise_list"
+        tools:layout="@layout/fragment_exercise_list" >
+        <action
+            android:id="@+id/action_navigation_fit_exercise_list_to_exerciseEditFragment"
+            app:destination="@id/exerciseEditFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/exerciseEditFragment"
+        android:name="com.example.cho.ui.fit.ExerciseEditFragment"
+        android:label="@string/title_exercise_edit"
+        tools:layout="@layout/fragment_exercise_edit" />
+
+    <fragment
+        android:id="@+id/navigation_meal"
+        android:name="com.example.cho.ui.meal.MealFragment"
+        android:label="@string/title_meal"
+        tools:layout="@layout/fragment_meal" />
+    <fragment
+        android:id="@+id/sessionEditFragment"
+        android:name="com.example.cho.ui.fit.SessionEditFragment"
+        android:label="@string/title_subsession_list"
+        tools:layout="@layout/fragment_session_edit">
+        <action
+            android:id="@+id/action_sessionEditFragment_to_exerciseListFragment"
+            app:destination="@id/exerciseListFragment" />
+    </fragment>
+
+</navigation>

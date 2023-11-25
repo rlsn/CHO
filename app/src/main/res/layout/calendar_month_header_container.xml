@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    >
+
+    <TextView
+        android:id="@+id/calendar_year_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textAlignment="textStart"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/calendar_month_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/calendar_day_titles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="7"
+        android:orientation="horizontal">
+
+        <include layout="@layout/calendar_day_title_text" />
+
+        <include layout="@layout/calendar_day_title_text" />
+
+        <include layout="@layout/calendar_day_title_text" />
+
+        <include layout="@layout/calendar_day_title_text" />
+
+        <include layout="@layout/calendar_day_title_text" />
+
+        <include layout="@layout/calendar_day_title_text" />
+
+        <include layout="@layout/calendar_day_title_text" />
+
+    </LinearLayout>
+</LinearLayout>
