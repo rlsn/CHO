@@ -1,6 +1,8 @@
 # CHO
 I created this Android app to keep track of my daily exercise activities. It records every detail of your workout sessions, such as the body parts, exercise names, reps, sets, and weights. It's especially helpful if you're prone to forgetting how many sets you've done in a session, like I always do.
 
+<img src = "preview/view_2.jpg" width ="30%" /> <img src = "preview/view_1.jpg" width ="30%" /> <img src = "preview/view_3.jpg" width ="30%" /> 
+
 ## Features
 - Activity calendar that shows when you exercised
 - Exercise management that records your the weight and rep/set number for each exercise, grouped by body parts
